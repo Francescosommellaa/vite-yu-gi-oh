@@ -13,7 +13,9 @@ export default {
 
 <template>
   <AppHeader/>
-  <AppContent/>
+  <main>
+    <AppContent/>
+  </main>
 </template>
 
 <style lang="scss">
