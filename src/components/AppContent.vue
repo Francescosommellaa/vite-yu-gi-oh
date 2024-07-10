@@ -1,7 +1,11 @@
 <script>
+import SingleCard from './SingleCard.vue'
 
 export default {
     name: "AppContent",
+    conponents: {
+        SingleCard,
+    },
 
     data() {
 
@@ -18,10 +22,7 @@ export default {
                 <span>Trovate N carte</span>
             </div>
             <div class="card-container">
-                <div class="card">
-
-                </div>
-
+                <SingleCard />
             </div>
         </div>
 
@@ -55,11 +56,6 @@ export default {
             align-items: start;
             flex-wrap: wrap;
             gap: 20px;
-
-            .card {
-                background-color: #D48F38;
-                width: calc(100% / 5 - 20px);
-            }
         }
     }
 }
