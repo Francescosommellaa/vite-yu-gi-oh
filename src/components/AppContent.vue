@@ -25,8 +25,8 @@ export default {
             <div class="counter">
                 <span>Trovate N carte</span>
             </div>
-            <div v-for="card in store.AppContent" :key="card.id" class="card-container">
-                <SingleCard :info="card"/>
+            <div class="card-container">
+                <SingleCard :info="card" v-for="card in store.AppContent" :key="card.id"/>
             </div>
         </div>
 
@@ -47,6 +47,8 @@ export default {
         height: 100%;
         width: 100%;
         padding: 2em;
+        overflow: auto;
+
 
         .counter {
             background-color: #000;

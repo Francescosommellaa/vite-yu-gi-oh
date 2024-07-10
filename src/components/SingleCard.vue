@@ -9,7 +9,7 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="info.image_url" :alt="info.name">
+        <img :src="info.card_images[2]" :alt="info.name">
         <h3>{{ info.name }}</h3>
         <span>{{ info.archetype }}</span>
     </div>
@@ -22,6 +22,7 @@ export default {
     width: calc(100% / 5 - 20px);
     text-align: center;
     padding-bottom: 0.6em;
+    color: white;
 
     img {
         height: 100%;

@@ -21,8 +21,8 @@ export default {
     getCard(){
       axios.get(store.apiURL)
       .then(res => {
-        console.log(res.data);
-        store.AppContent = res.data;
+        console.log(res.data.data);
+        store.AppContent = res.data.data;
       })
       .catch(err => {
         console.log(err);
