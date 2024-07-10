@@ -8,7 +8,7 @@ export default {
 
 <template>
     <div class="card">
-        <img src="https://th.bing.com/th/id/OIP.7Zaj98ryYXkH2XYqC8vkgwHaKu?rs=1&pid=ImgDetMain" alt="carta yugioh">
+        <img src="" alt="carta yugioh">
         <h3>nome carta</h3>
         <span>tipo</span>
     </div>
