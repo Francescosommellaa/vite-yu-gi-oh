@@ -3,7 +3,7 @@ import SingleCard from './SingleCard.vue'
 
 export default {
     name: "AppContent",
-    conponents: {
+    components: {
         SingleCard,
     },
 
@@ -52,10 +52,10 @@ export default {
 
         .card-container {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: start;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 25px;
         }
     }
 }
