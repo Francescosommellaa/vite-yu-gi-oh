@@ -2,15 +2,16 @@
 
 export default {
     name: "SingleCard",
+    props: ['info'],
 }
 
 </script>
 
 <template>
     <div class="card">
-        <img src="" alt="carta yugioh">
-        <h3>nome carta</h3>
-        <span>tipo</span>
+        <img :src="info.image_url" :alt="info.name">
+        <h3>{{ info.name }}</h3>
+        <span>{{ info.archetype }}</span>
     </div>
 </template>
 

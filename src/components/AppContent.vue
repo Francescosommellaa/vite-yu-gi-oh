@@ -1,14 +1,18 @@
 <script>
 import SingleCard from './SingleCard.vue'
 
+// import store
+import { store } from '../store';
+
 export default {
     name: "AppContent",
     components: {
         SingleCard,
     },
-
     data() {
-
+        return {
+            store,
+        }   
     }
 }
 
@@ -21,8 +25,8 @@ export default {
             <div class="counter">
                 <span>Trovate N carte</span>
             </div>
-            <div class="card-container">
-                <SingleCard />
+            <div v-for="card in store.AppContent" :key="card.id" class="card-container">
+                <SingleCard :info="card"/>
             </div>
         </div>
 
