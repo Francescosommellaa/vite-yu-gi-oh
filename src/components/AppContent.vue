@@ -54,12 +54,13 @@ export default {
             background-color: #000;
             color: white;
             padding: 0.8em;
+            margin: 0.5em 0;
         }
 
         .card-container {
             display: flex;
             justify-content: flex-start;
-            align-items: start;
+            align-items: stretch;
             flex-wrap: wrap;
             gap: 25px;
         }
