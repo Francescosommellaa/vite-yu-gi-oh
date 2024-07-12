@@ -9,8 +9,8 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="info.card_images[2]" :alt="info.name">
-        <h3>{{ info.name }}</h3>
+        <img :src="info.card_images[0].image_url" :alt="info.name">
+        <h4>{{ info.name }}</h4>
         <span>{{ info.archetype }}</span>
     </div>
 </template>
@@ -21,11 +21,10 @@ export default {
     background-color: #D48F38;
     width: calc(100% / 5 - 20px);
     text-align: center;
-    padding-bottom: 0.6em;
+    padding-bottom: 0.4em;
     color: white;
 
     img {
-        height: 100%;
         width: 100%;
     }
 }
