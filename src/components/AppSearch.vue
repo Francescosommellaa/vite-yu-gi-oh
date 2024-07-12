@@ -11,9 +11,13 @@ export default {
     <div class="container">
         <select class="form-select form-select-lg mb-3" aria-label="Large select example">
             <option selected>Scegli l'archetipo</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="1">Alien</option>
+            <option value="2">Arms</option>
+            <option value="4">Noble Knight</option>
+            <option value="5">Melodious</option>
+            <option value="6">HERO</option>
+            <option value="7">Archfiend</option>
+            <option value="8">Umi</option>
         </select>
     </div>
 </template>
