@@ -21,13 +21,19 @@ export default {
   },
   methods: {
     getCard(){
-      axios.get(store.apiURL)
-      .then(res => {
-        console.log(res.data.data);
-        store.AppContent = res.data.data;
-      })
-      .catch(err => {
-        console.log(err);
+      let endPoint = store.apiURL;
+
+      if(store.selectText !== ""){
+        endPoint += '?${apiNameParam}=${selectText}'
+      }
+
+      axios.get(endPoint)
+        .then(res => {
+          console.log(res.data.data);
+          store.AppContent = res.data.data;
+        })
+        .catch(err => {
+          console.log(err);
       })
     }
   },
