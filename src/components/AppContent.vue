@@ -1,5 +1,6 @@
 <script>
-import SingleCard from './SingleCard.vue'
+import SingleCard from './SingleCard.vue';
+import ResultMessage from './ResultMessage.vue';
 
 // import store
 import { store } from '../store';
@@ -8,6 +9,7 @@ export default {
     name: "AppContent",
     components: {
         SingleCard,
+        ResultMessage,
     },
     data() {
         return {
@@ -23,7 +25,7 @@ export default {
     <div class="container">
         <div class="container-card">
             <div class="counter">
-                <span>Trovate N carte</span>
+                <ResultMessage />
             </div>
             <div class="card-container">
                 <SingleCard :info="card" v-for="card in store.AppContent" :key="card.id"/>
