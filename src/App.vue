@@ -23,8 +23,8 @@ export default {
     getCard(){
       let endPoint = store.apiURL;
 
-      if(store.selectText !== ""){
-        endPoint += '?${apiNameParam}=${selectText}'
+      if(store.selectText !== ''){
+        endPoint += '&archetype=Alien'
       }
 
       axios.get(endPoint)
