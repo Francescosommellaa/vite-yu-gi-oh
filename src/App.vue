@@ -1,6 +1,7 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppContent from './components/AppContent.vue';
+import AppSearch from './components/AppSearch.vue';
 import axios from 'axios';
 
 // import store
@@ -10,6 +11,7 @@ export default {
   name: 'App',
   components: {
     AppHeader,
+    AppSearch,
     AppContent,
   },
   data() {
@@ -36,9 +38,10 @@ export default {
 </script>
 
 <template>
-  <AppHeader/>
+  <AppHeader />
   <main>
-    <AppContent/>
+    <AppSearch />
+    <AppContent />
   </main>
 </template>
 
