@@ -1,15 +1,21 @@
 <script>
+// import store
+import { store } from '../store';
+
 export default {
     name: "AppSearch",
     
     data() {
+        return {
+            store,
+        }
     }
 }
 </script>
 
 <template>
     <div class="container">
-        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+        <select class="form-select">
             <option selected>Scegli l'archetipo</option>
             <option value="1">Alien</option>
             <option value="2">Arms</option>
